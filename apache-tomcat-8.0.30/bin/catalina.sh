@@ -121,6 +121,9 @@ done
 # Get standard environment variables
 PRGDIR=`dirname "$PRG"`
 
+# Set JRE_HOME by installer JAVA RUNTIME ENVIRONMENT
+JRE_HOME=java_path
+
 # Only set CATALINA_HOME if not already set
 [ -z "$CATALINA_HOME" ] && CATALINA_HOME=`cd "$PRGDIR/.." >/dev/null; pwd`
 
